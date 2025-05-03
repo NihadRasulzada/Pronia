@@ -1,0 +1,19 @@
+﻿@model Pronia.MVC.Models.Category
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="card-body">
+            <div class="container-fluid">
+                <form asp-action="Update" asp-route-id="@Model.Id">
+                    <div class="form-group">
+                        <label asp-for="Name">Category Name</label>
+                        <input asp-for="Name" class="form-control">
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

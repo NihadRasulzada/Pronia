@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Pronia.MVC.Models;
+using Pronia.MVC.Models.Commons;
 
 namespace Pronia.MVC.DAL
 {
